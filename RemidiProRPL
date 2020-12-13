@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class RemedProRPL {
+    
+    static void nama() {
+    System.out.println("Ivander Dzaky Khairullah.");}
+    
+    static void kelas() {
+    System.out.println("XRPL-3/20");}
+    
+    static void usia() {
+    System.out.println("Usia : " + (2020 - 2005));}
+        
+    public static void main(String[] args) {
+        Scanner sken = new Scanner(System.in); 
+        int tugas1, tugas2, tugas3, nilaiFISIKA, rerataFISIKA;
+        boolean keluar = true;
+        String ulang;
+        
+        nama();
+        kelas();
+        usia();
+        
+        System.out.println("\n");
+        System.out.println("Nilai Rapor FISIKA : ");
+        
+        System.out.println("Masukkan nilai tugas 1 anda :");
+        tugas1 = sken.nextInt();
+        
+        System.out.println("Masukkan nilai tugas 2 anda :");
+        tugas2 = sken.nextInt();
+        
+        System.out.println("Masukkan nilai tugas 3 anda :");
+        tugas3 = sken.nextInt();
+        
+        nilaiFISIKA = (tugas1 + tugas2 + tugas3);
+        rerataFISIKA = (nilaiFISIKA / 3);
+        System.out.println("Nilai rapor FISIKA anda = " + rerataFISIKA);
+        
+        if (rerataFISIKA >= 90) {
+        System.out.println("Grade anda adalah A");}
+        
+        if (rerataFISIKA >= 75 && rerataFISIKA <= 89) {
+        System.out.println("Grade anda adalah B");}
+        
+        if (rerataFISIKA >= 70 && rerataFISIKA <= 74) {
+        System.out.println("Grade anda adalah C");}
+        
+        else {
+        System.out.println("Selamat, itulah hasil nilai anda");}
+        
+        System.out.println("\n");
+        
+            while( keluar ) {
+            System.out.println("Apakah anda ingin keluar?");
+            System.out.print("Jawab Ya atau Tidak ");
+
+            ulang = sken.nextLine();
+           
+            if (ulang.equalsIgnoreCase("ya") ){
+                keluar = false;
+            }
+        
+    }
+    
+    }
+}
